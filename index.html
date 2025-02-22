@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dân trí</title>
+</head>
+<style>
+    body{
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+    #advertisement{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        background-color: bisque;
+    }
+    #advertisement > img{
+        width:30%;
+        height: auto;
+    }
+    .container{
+        width:80%;
+        margin: 5px auto;
+    }
+    .title{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+    }
+    .title > div{
+        display: flex;
+        padding:10px 0px;
+        width:30%;
+    }
+    #title-1{
+        justify-content: space-between;
+    }
+    #title-1 > div{
+        padding:6px;
+    }
+    #title-2{
+        justify-content: center;
+    }
+    #title-2 > div{
+        padding:15px;
+    }
+    #title-3{
+        justify-content: flex-end;
+    }
+    #title-3 > div{
+        padding:15px;
+    }
+    #title-2 > div:hover,#title-3 > div:hover{
+        cursor: pointer;
+        text-decoration:underline;
+        font-weight: bold;
+    }
+    #logo-dantri{
+        cursor: pointer;
+        padding:0;
+        margin:0;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header > div{
+        background-color: rgba(230, 224, 224, 0.925);
+        border: 1px solid black;
+        padding:2px;
+    }
+    .header>div:hover{
+        background-color: red;
+        cursor: pointer;
+    }
+    .newsbox{
+        display: flex;
+        justify-content: space-between;
+        margin-top:10px;
+        height: 600px;
+        border-top:1px solid rgb(226, 226, 226);
+        border-bottom:1px solid rgb(226, 226, 226);
+    }
+    .newsbox > div{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         width:25%;
+         font-family:Arial, Helvetica, sans-serif;
+         font-weight: bold;
+         padding:5px;
+         
+    }
+    .newsbox-1 >img,.newsbox-2 >img{
+        width: 100%;
+        margin-bottom:5px;
+    }
+    #newsbox3{
+        justify-content: flex-start;
+        width:45%;
+        border-left:1px solid rgb(226, 226, 226);
+        padding: 5px 20px;
+        border-right:1px solid rgb(226, 226, 226);
+    }
+    .newsbox-3 > img{
+        width:100%;
+        
+    }
+    .newsbox-right{
+        display: flex;
+        justify-content: space-between;
+    }
+    .newsbox-right > div{
+        width:50%;
+        padding:5px;
+    }
+    .newsbox-right img{
+        width:100%;
+    }
+    #newstarget{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding:5px;
+    }
+    #logo-mobile{
+        display:none;
+        justify-content: center;
+        margin:20px;
+    }
+    #logo-mobile > img{
+        width:80%;
+    }
+    @media (max-width: 950px){
+        #advertisement{
+            display: none;
+        }
+        .container{
+            width:95%;
+        }
+        .title{
+            display: none;
+        }
+        .header{
+            display: none;
+        }
+        #logo-mobile{
+            display: flex;
+        }
+        .newsbox{
+            flex-direction: column;
+        }
+        .newsbox-1{
+            margin: 0 0 30px 0;
+        }
+        .newsbox > div{
+            width:100%;
+            justify-content: space-between;
+            padding:0;
+            margin: 0 0 30px 0;
+        }
+        #newsbox3{
+            width:100%;
+            margin:0 0 30px 0;
+            padding:0;
+        }
+    }
+</style>
+<body>
+    <div id="logo-mobile">
+        <img src="https://cdnweb.dantri.com.vn/dist/static-logo.1-0-1.7982c496e23978b68141.svg" alt="">
+    </div>
+    <div id="advertisement">  
+        <iframe id="tpm_backup-creative-1740224784156" src="https://cdn.dtadnetwork.com/creatives/html5/202501/1736498037/index.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="false" style="width: 1920px; height: 250px;"></iframe>
+    </div>
+    <div class="container">
+        <div class="title">
+            <div id="title-1">
+                <div id="logo-dantri">
+                    <img src="https://cdnweb.dantri.com.vn/dist/static-logo.1-0-1.7982c496e23978b68141.svg" alt="">
+                </div>
+                <div style="border-right : 1px solid rgb(226, 226, 226);">
+                    TP. Hồ Chí Minh <br>
+                    Thứ 7, 22/02/2025
+                </div>
+                <div style="margin-top:10px;">
+                    30°C
+                </div>
+            </div>
+            <div id="title-2">
+                <div style="border-right : 1px solid rgb(226, 226, 226)">Dân sinh</div>
+                <div style="border-right : 1px solid rgb(226, 226, 226);">Fica</div>
+                <div>Dtinews</div>
+            </div>
+            <div id="title-3">
+                <div style="border-right : 1px solid rgb(226, 226, 226);">Đăng nhập</div>
+                <div>Finding</div>
+            </div>
+        </div>
+        <div class="header">
+            <div>Trang chủ</div>
+            <div>video</div>
+            <div>kinh doanh</div>
+            <div>xã hội</div>
+            <div>thế giới</div>
+            <div>giải trí</div>
+            <div>bât động sản</div>
+            <div>thể thao</div>
+            <div>sức khỏe</div>
+            <div>việc làm</div>
+            <div>nhân ái</div>
+            <div>xe ++</div>
+            <div>công nghệ</div>
+            <div>giáo dục</div>
+            <div>an sinh</div>
+            <div>pháp luật</div>
+            <div>...</div>
+        </div>
+        <div class="newsbox">
+            <div>
+                <div class="newsbox-1">
+                    <img src="https://cdnphoto.dantri.com.vn/ieaKx3LEM3H20nUPlLtoJDqK0RA=/zoom/468_312/2025/02/22/champions20league20power20rankings203-crop-1740163595221.jpeg" alt="">
+                    Vòng 1/8 Champions League: Hàng rào phá bỏ, trận chung kết trong mơ
+                </div>
+                <div class="newsbox-2">
+                    <img src="https://cdnphoto.dantri.com.vn/7LE7nt4GHntx4aACRQPITT_mACw=/zoom/468_312/2025/02/22/trumpafp1211zon-1740209470900.jpg" alt="">
+                    Ông Trump nêu cách chấm dứt xung đột giữa Nga và Ukraine
+                </div>
+            </div>
+            <div id="newsbox3">
+                <div class="newsbox-3">
+                    <img src="https://cdnphoto.dantri.com.vn/NkrxubfttP53ZGU2O-jQSiS9DuI=/zoom/1032_688/2025/02/22/vnapotaltongbithutolamdimetroso1tphochiminhvatrochuyenvoinguoidan7868706-crop-1740212332067.jpeg" alt="">
+                    <br>
+                    <h2>Tổng Bí thư Tô Lâm đi Metro số 1 TPHCM, trò chuyện với người dân</h2>
+                    <p style="font-style: italic;font-weight: lighter;">Lãnh đạo Công ty Vận hành Metro số 1 cho biết, sự xuất hiện của Tổng Bí thư Tô Lâm và đoàn của Thủ tướng Lào tại Metro số 1 khiến những người dân và tập thể Metro số 1 rất bất ngờ.</p>
+                </div>
+            </div>
+            <div>
+                <div class="newsbox-right">
+                    <div style="padding:12px; font-weight: lighter;font-style: italic;">
+                        Vụ 1km đường có 23 biển cấm đỗ xe: Chính quyền chỉ đạo tháo dỡ
+                    </div>
+                    <div>
+                        <img src="https://cdnphoto.dantri.com.vn/7C_6guGF0VlKT9ECo1kbRSUIhmU=/zoom/240_160/2025/02/22/bien-bao-giao-thonglam-dongduc-bao-1740206920561.jpg" alt="">
+                    </div>
+                </div>
+                <div class="newsbox-right">
+                    <div style="padding:12px; font-weight: lighter;font-style: italic;">
+                        Bắt 3 lãnh đạo xã liên quan sai phạm tái định cư sân bay Long Thành
+                    </div>
+                    <div>
+                        <img src="https://cdnphoto.dantri.com.vn/aEgUZhBNCEtO2Mdm21-LnMxYsvY=/zoom/240_160/2025/02/18/img7945-edited-1739849415474.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="newsbox-right">
+                    <div style="padding:12px; font-weight: lighter;font-style: italic;">
+                        Châu Âu tăng cường viện trợ quân sự khẩn cấp cho Ukraine
+                    </div>
+                    <div>
+                        <img src="https://cdnphoto.dantri.com.vn/64JvJD_vRyu0YOFhgxvJVrjEjIE=/zoom/240_160/2025/02/22/vien-troavia-1740212628456.jpg" alt="">
+                    </div>
+                </div>
+                <div class="newsbox-right">
+                    <div style="padding:12px; font-weight: lighter;font-style: italic;">
+                        Không tổ chức công an cấp huyện: "Tỉnh toàn diện; xã vững mạnh, bám cơ sở"
+                    </div>
+                    <div id="newstarget">
+                        <div>
+                            <img src="https://cdnphoto.dantri.com.vn/XBDX7mv5PvRHAjtDmAB4_-MVIJY=/zoom/176_176/2025/02/22/le-van-cuong-crop-1740190727999.jpeg" style="border-radius: 100px;" alt="">
+                        </div>
+                        <div style="text-align: center;font-weight: lighter;">Lê Văn Cương</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height: 1000px;"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
